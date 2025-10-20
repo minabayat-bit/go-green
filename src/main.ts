@@ -8,7 +8,12 @@ const nextBtn = document.getElementById('next')
 
 function showSlide(index: number): void {
     slidesEl.forEach((slide, i) => {
-        slide.style.opacity = i === index ? '1' : '0';
+        slide.classList.remove('opacity-100');
+        slide.classList.add('opacity-0');
+        if (i === index) {
+            slide.classList.remove('opacity-0');
+            slide.classList.add('opacity-100');
+        }
     })
 }
 
