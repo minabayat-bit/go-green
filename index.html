@@ -952,24 +952,26 @@
 
     <div class="pt-10 space-y-8">
       
-      <div>
-        <div class="flex justify-between mb-1">
-          <span class="text-lg font-medium">HTML</span>
-          <span class="text-lg font-medium" id="html-percent">0%</span>
-        </div>
-        <div class="w-full bg-gray-300 rounded-1xl h-12">
+      <div class="relative text-white">
+        
+        <div class="w-full bg-gray-300 rounded-1xl h-12 ">
           <div id="html-bar" class="bg-[#1bdf73] h-12 rounded-1xl w-0 transition-all duration-1000 ease-in-out"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <span class="text-lg font-medium bottom-2 left-5 absolute">HTML</span>
+          <span class="text-lg font-medium absolute bottom-2 left-360 " id="html-percent">0%</span>
         </div>
       </div>
 
       
-      <div>
-        <div class="flex justify-between mb-1">
-          <span class="text-lg font-medium">CSS</span>
-          <span class="text-lg font-medium" id="css-percent">0%</span>
-        </div>
+      <div class="relative text-white">
+        
         <div class="w-full bg-gray-300 rounded-1x2 h-12">
           <div id="css-bar" class="bg-[#007bff] h-12 rounded-1xl w-0 transition-all duration-1000 ease-in-out"></div>
+        </div>
+        <div class="flex justify-between mb-1">
+          <span class="text-lg font-medium bottom-2 left-5 absolute">CSS</span>
+          <span class="text-lg font-medium absolute bottom-2 left-360 " id="css-percent">0%</span>
         </div>
       </div>
 
@@ -978,12 +980,13 @@
 
       
       <div class="relative text-white">
-        <div class="flex justify-between mb-1">
-          <span class="text-lg font-medium">jQuery</span>
-          <span class="text-lg font-medium" id="php-percent">0%</span>
-        </div>
+        
         <div class="w-full bg-gray-300 rounded-1xl h-12">
           <div id="php-bar" class="bg-[#ffc107] h-12 rounded-1xl w-0 transition-all duration-1000 ease-in-out"></div>
+        </div>
+        <div class="flex justify-between mb-1 absolute">
+          <span class="text-lg font-medium bottom-2 left-5 absolute">jQuery</span>
+          <span class="text-lg font-medium absolute bottom-2 left-360 " id="php-percent">0%</span>
         </div>
       </div>
 
@@ -1001,6 +1004,25 @@
 
 
 
+    </div>
+  </div>
+
+  <div class="flex flex-row flex-wrap justify-around p-10">
+    <div class="flex flex-col justify-center items-center gap-1">
+      <span class="text-[#1bdf73] text-[80px] font-bold" id="number1">0</span>
+      <span class="text-gray-600 text-[22px]">Our Staffs</span>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-1">
+      <span class="text-[#1bdf73] text-[80px] font-bold" id="number2">0</span>
+      <span class="text-gray-600 text-[22px]">Our Clients</span>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-1">
+      <span class="text-[#1bdf73] text-[80px] font-bold" id="number3">0</span>
+      <span class="text-gray-600 text-[22px]">Completed Projects</span>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-1">
+      <span class="text-[#1bdf73] text-[80px] font-bold" id="number4">0</span>
+      <span class="text-gray-600 text-[22px]">Running Projects</span>
     </div>
   </div>
 </section>

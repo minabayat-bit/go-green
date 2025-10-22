@@ -78,3 +78,33 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(document.getElementById('skills')!);
 
+
+
+function animateCount(id: string, target: number, duration: number = 2000): void {
+  const el = document.getElementById(id) as HTMLElement;
+  let current = 0;
+  const increment = Math.ceil(target / (duration / 20));
+  const counter = setInterval(() => {
+    current += increment;
+    if (current >= target) {
+      current = target;
+      clearInterval(counter);
+    }
+    el.textContent = current.toString();
+  }, 20);
+}
+
+const statsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCount('number1', 100);
+      animateCount('number2', 200);
+      animateCount('number3', 300);
+      animateCount('number4', 400);
+      statsObserver.disconnect();
+    }
+  });
+}, { threshold: 0.5 });
+
+statsObserver.observe(document.getElementById('stats')!);
+
