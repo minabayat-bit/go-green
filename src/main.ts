@@ -45,3 +45,36 @@ function resetTimer(): void {
     slideTimer = window.setInterval(nextSlide, intervalEl);
 }
 showSlide(current);
+
+
+function animateSkill(id: string, percent: number) {
+  const bar = document.getElementById(`${id}-bar`) as HTMLElement;
+  const label = document.getElementById(`${id}-percent`) as HTMLElement;
+
+  let current = 0;
+  const interval = setInterval(() => {
+    if (current >= percent) {
+      clearInterval(interval);
+    } else {
+      current++;
+      label.textContent = `${current}%`;
+      bar.style.width = `${current}%`;
+    }
+  }, 20);
+}
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateSkill('html', 100);
+      animateSkill('css', 90);
+      animateSkill('js', 60);
+      animateSkill('php', 70);
+      observer.disconnect();
+    }
+  });
+}, { threshold: 0.5 });
+
+observer.observe(document.getElementById('skills')!);
+
