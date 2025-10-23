@@ -3,6 +3,8 @@
 
 @import "tailwindcss";
 
-body{
+body {
   font-family: "Montserrat";
+  overflow: visible;
 }
+

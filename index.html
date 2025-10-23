@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>go-green</title>
   </head>
-  <body class="h-screen">
-    <header class="bg-black flex justify-between p-8 pt-6 sticky top-0">
+  <body class="min-h-screen">
+    <header class="bg-black/80 flex justify-between p-8 px-20 pt-8 sticky z-50 top-0">
       <h2
-        class="text-[#1bdf73] text-3xl font-semibold tracking-widest hover:text-white"
+        class="text-[#1bdf73] text-5xl font-semibold tracking-widest hover:text-white"
       >
         GO GREEN
       </h2>
-      <div class="flex flex-row gap-4">
-        <span class="text-white hover:text-[#1bdf73]"> HOME</span>
-        <span class="text-white hover:text-[#1bdf73]">ABOUT</span>
-        <span class="text-white hover:text-[#1bdf73]">SERVICES</span>
-        <span class="text-white hover:text-[#1bdf73]">Portfolio</span>
-        <span class="text-white hover:text-[#1bdf73]">PRICE</span>
+      <div class="flex flex-row gap-8 *:cursor-pointer ">
+        <span class="text-white hover:text-[#1bdf73] text-[20px]"> HOME</span>
+        <span class="text-white hover:text-[#1bdf73] text-[20px]">ABOUT</span>
+        <span class="text-white hover:text-[#1bdf73] text-[20px]">SERVICES</span>
+        <span class="text-white hover:text-[#1bdf73] text-[20px]">Portfolio</span>
+        <span class="text-white hover:text-[#1bdf73] text-[20px]">PRICE</span>
         <div class="">
           <span
-            class="text-white relative hover:text-[#1bdf73] flex flex-row items-center justify-center"
+          id="Dropdown-toggle"
+            class=" text-white relative hover:text-[#1bdf73] flex flex-row items-center justify-center text-[20px]"
           >
             Dropdown
             <div>
@@ -51,15 +52,18 @@
             </div>
           </span>
           <ul
-            class="absolute top-15 flex-col justify-center items-center bg-white gap-2 p-6 *:text-[15px] hidden hover:flex"
+          id="Dropdown-menu"
+            class=" absolute top-15 space-y-6 flex-col justify-center items-center bg-white  p-6 *:text-[20px] hidden"
           >
             <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
             <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
             <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
             <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
+            <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
+          
           </ul>
         </div>
-        <span class="text-white hover:text-[#1bdf73]">CONTACT</span>
+        <span class="text-white hover:text-[#1bdf73] text-[20px]">CONTACT</span>
       </div>
     </header>
     <main>
@@ -1024,6 +1028,29 @@
       <span class="text-[#1bdf73] text-[80px] font-bold" id="number4">0</span>
       <span class="text-gray-600 text-[22px]">Running Projects</span>
     </div>
+  </div>
+</section>
+<section class="h-full p-15 bg-[#f2f2f2]">
+  <div class="flex flex-col justify-center items-center  p" >
+  <h2 class="text-5xl text-gray-800 font-bold mb-10 text-center">Our Portfolio</h2>
+    <span class="text-[50px] text-gray-800 font-bold text-center">-------</span>
+    <p class="text-center text-gray-500 text-[25px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper pharetra<br> ligula nec hendrerit. Ut eu libero nec magna placerat fringilla.</p>
+<div id="filterbtn" class="flex justify-around gap-5 bg-gray-800 *:focus:bg-[#1bdf73] text-white text-[20px] font-light m-10 h-[60px] *:px-6 *:cursor-pointer">
+  <button data-category="all">ALL</button>
+  <button data-category="web design">WEB DESIGN</button>
+  <BUtton data-category="web Development">WEB DEVELOPMENT</BUtton>
+  <BUtton data-category="app design">APP DESIGN</BUtton>
+  <BUTton data-category="app Development">APP DEVELOPMENT</BUTton>
+</div>
+<div class="grid grid-cols-3 grrid-rows-2 gap-3 *:p-10 *:brightness-50">
+  <img class="item" data-category="web design" src="./src/img/portfolio-1.jpg" alt="">
+  <img class="item" data-category="web Development" src="./src/img/portfolio-2.jpg" alt="">
+  <img class="item" data-category="app design" src="./src/img/portfolio-3.jpg" alt="">
+  <img class="item" data-category="app Development" src="./src/img/portfolio-4.jpg" alt="">
+  <img class="item" data-category="web design" src="./src/img/portfolio-5.jpg" alt="">
+  <img class="item" data-category="web Development" src="./src/img/portfolio-6.jpg" alt="">
+</div>
+
   </div>
 </section>
 
