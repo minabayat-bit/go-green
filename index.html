@@ -7,22 +7,30 @@
     <title>go-green</title>
   </head>
   <body class="min-h-screen">
-    <header class="bg-black/80 flex justify-between p-8 px-20 pt-8 sticky z-50 top-0">
+    <header
+      class="bg-black/80 flex justify-between p-8 px-20 pt-8 sticky z-50 top-0"
+    >
       <h2
         class="text-[#1bdf73] text-5xl font-semibold tracking-widest hover:text-white"
       >
         GO GREEN
       </h2>
-      <div class="flex flex-row gap-8 *:cursor-pointer ">
+      <div class="flex flex-row gap-8 *:cursor-pointer">
         <span class="text-white hover:text-[#1bdf73] text-[20px]"> HOME</span>
-        <span class="text-white hover:text-[#1bdf73] text-[20px]">ABOUT</span>
-        <span class="text-white hover:text-[#1bdf73] text-[20px]">SERVICES</span>
-        <span class="text-white hover:text-[#1bdf73] text-[20px]">Portfolio</span>
+        <a href="#about" class="text-white hover:text-[#1bdf73] text-[20px]"
+          >ABOUT</a
+        >
+        <span class="text-white hover:text-[#1bdf73] text-[20px]"
+          >SERVICES</span
+        >
+        <span class="text-white hover:text-[#1bdf73] text-[20px]"
+          >Portfolio</span
+        >
         <span class="text-white hover:text-[#1bdf73] text-[20px]">PRICE</span>
         <div class="">
           <span
-          id="Dropdown-toggle"
-            class=" text-white relative hover:text-[#1bdf73] flex flex-row items-center justify-center text-[20px]"
+            id="Dropdown-toggle"
+            class="text-white relative hover:text-[#1bdf73] flex flex-row items-center justify-center text-[20px]"
           >
             Dropdown
             <div>
@@ -52,15 +60,14 @@
             </div>
           </span>
           <ul
-          id="Dropdown-menu"
-            class=" absolute top-15 space-y-6 flex-col justify-center items-center bg-white  p-6 *:text-[20px] hidden"
+            id="Dropdown-menu"
+            class="absolute top-15 space-y-6 flex-col justify-center items-center bg-white p-6 *:text-[20px] hidden"
           >
             <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
             <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
             <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
             <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
             <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
-          
           </ul>
         </div>
         <span class="text-white hover:text-[#1bdf73] text-[20px]">CONTACT</span>
@@ -178,6 +185,7 @@
         </button>
       </section>
       <section
+        id="about"
         class="h-[100%] flex flex-col justify-center items-center mt-80 bg-[#f2f2f2]"
       >
         <h2 class="text-[45px] font-semibold text-black pt-15">ABOUT US</h2>
@@ -526,9 +534,6 @@
               Praesentium.
             </p>
           </div>
-        
-
-
         </div>
       </section>
       <section
@@ -586,7 +591,8 @@
                     id="primary"
                     d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54"
                     style="fill: #008000"
-                  /></svg>
+                  />
+                </svg>
                 >HTML5 and CSS3</span
               >
               <span class="flex flex-row items-center gap-2">
@@ -708,7 +714,8 @@
                     id="primary"
                     d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54"
                     style="fill: #008000"
-                  /></svg>
+                  />
+                </svg>
                 >HTML5 and CSS3</span
               >
               <span class="flex flex-row items-center gap-2">
@@ -839,7 +846,8 @@
                     id="primary"
                     d="M0.3 0.54a0.03 0.03 0 0 1 -0.021 -0.009l-0.15 -0.15a0.03 0.03 0 0 1 0.043 -0.043l0.129 0.129 0.249 -0.249a0.03 0.03 0 1 1 0.043 0.043l-0.27 0.27A0.03 0.03 0 0 1 0.3 0.54"
                     style="fill: #008000"
-                  /></svg>
+                  />
+                </svg>
                 >HTML5 and CSS3</span
               >
               <span class="flex flex-row items-center gap-2">
@@ -947,116 +955,316 @@
           </div>
         </div>
       </section>
-      
+
       <section id="skills" class="h-full py-20">
-  <div class="flex flex-col justify-center items-center p-8">
-    <h2 class="text-4xl font-bold mb-10 text-center">OUR SKILLS</h2>
-    <span class="text-[50px] font-bold">-------</span>
-    <p class="text-center text-gray-500 text-[25px]">Quisque ac tincidunt ipsum egestas viverra mi, ac vehicula enim consectetur quis.<br> In imperdiet varius elit, ut convallis lectus luctus quis.</p>
+        <div class="flex flex-col justify-center items-center p-8">
+          <h2 class="text-4xl font-bold mb-10 text-center">OUR SKILLS</h2>
+          <span class="text-[50px] font-bold">-------</span>
+          <p class="text-center text-gray-500 text-[25px]">
+            Quisque ac tincidunt ipsum egestas viverra mi, ac vehicula enim
+            consectetur quis.<br />
+            In imperdiet varius elit, ut convallis lectus luctus quis.
+          </p>
 
-    <div class="pt-10 space-y-8">
-      
-      <div class="relative text-white">
-        
-        <div class="w-full bg-gray-300 rounded-1xl h-12 ">
-          <div id="html-bar" class="bg-[#1bdf73] h-12 rounded-1xl w-0 transition-all duration-1000 ease-in-out"></div>
+          <div class="pt-10 space-y-8">
+            <div class="relative text-white">
+              <div class="w-full bg-gray-300 rounded-1xl h-12">
+                <div
+                  id="html-bar"
+                  class="bg-[#1bdf73] h-12 rounded-1xl w-0 transition-all duration-1000 ease-in-out"
+                ></div>
+              </div>
+              <div class="flex justify-between mb-1">
+                <span class="text-lg font-medium bottom-2 left-5 absolute"
+                  >HTML</span
+                >
+                <span
+                  class="text-lg font-medium absolute bottom-2 left-360"
+                  id="html-percent"
+                  >0%</span
+                >
+              </div>
+            </div>
+
+            <div class="relative text-white">
+              <div class="w-full bg-gray-300 rounded-1x2 h-12">
+                <div
+                  id="css-bar"
+                  class="bg-[#007bff] h-12 rounded-1xl w-0 transition-all duration-1000 ease-in-out"
+                ></div>
+              </div>
+              <div class="flex justify-between mb-1">
+                <span class="text-lg font-medium bottom-2 left-5 absolute"
+                  >CSS</span
+                >
+                <span
+                  class="text-lg font-medium absolute bottom-2 left-360"
+                  id="css-percent"
+                  >0%</span
+                >
+              </div>
+            </div>
+
+            <div class="relative text-white">
+              <div class="w-full bg-gray-300 rounded-1xl h-12">
+                <div
+                  id="php-bar"
+                  class="bg-[#ffc107] h-12 rounded-1xl w-0 transition-all duration-1000 ease-in-out"
+                ></div>
+              </div>
+              <div class="flex justify-between mb-1 absolute">
+                <span class="text-lg font-medium bottom-2 left-5 absolute"
+                  >jQuery</span
+                >
+                <span
+                  class="text-lg font-medium absolute bottom-2 left-360"
+                  id="php-percent"
+                  >0%</span
+                >
+              </div>
+            </div>
+
+            <div class="relative text-white">
+              <div class="w-[1500px] bg-gray-300 rounded-1x2 h-12 relative">
+                <div
+                  id="js-bar"
+                  class="bg-[#dc3545] h-12 rounded- transition-all duration-1000 ease-in-out"
+                ></div>
+              </div>
+              <div class="absolute">
+                <span class="text-lg font-medium bottom-2 left-5 absolute"
+                  >PHP</span
+                >
+                <span
+                  class="text-lg font-medium absolute bottom-2 left-360"
+                  id="js-percent"
+                  >0%</span
+                >
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex justify-between mb-1">
-          <span class="text-lg font-medium bottom-2 left-5 absolute">HTML</span>
-          <span class="text-lg font-medium absolute bottom-2 left-360 " id="html-percent">0%</span>
+
+        <div class="flex flex-row flex-wrap justify-around p-10" id="stats">
+          <div class="flex flex-col justify-center items-center gap-1">
+            <span class="text-[#1bdf73] text-[80px] font-bold" id="number1"
+              >0</span
+            >
+            <span class="text-gray-600 text-[22px]">Our Staffs</span>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-1">
+            <span class="text-[#1bdf73] text-[80px] font-bold" id="number2"
+              >0</span
+            >
+            <span class="text-gray-600 text-[22px]">Our Clients</span>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-1">
+            <span class="text-[#1bdf73] text-[80px] font-bold" id="number3"
+              >0</span
+            >
+            <span class="text-gray-600 text-[22px]">Completed Projects</span>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-1">
+            <span class="text-[#1bdf73] text-[80px] font-bold" id="number4"
+              >0</span
+            >
+            <span class="text-gray-600 text-[22px]">Running Projects</span>
+          </div>
         </div>
-      </div>
+      </section>
+      <section class="h-full p-15 bg-[#f2f2f2]">
+        <div class="flex flex-col justify-center items-center p">
+          <h2 class="text-5xl text-gray-800 font-bold mb-10 text-center">
+            Our Portfolio
+          </h2>
+          <span class="text-[50px] text-gray-800 font-bold text-center"
+            >-------</span
+          >
+          <p class="text-center text-gray-500 text-[25px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            ullamcorper pharetra<br />
+            ligula nec hendrerit. Ut eu libero nec magna placerat fringilla.
+          </p>
+          <div
+            id="filterbtn"
+            class="flex justify-around gap-5 bg-gray-800 *:focus:bg-[#1bdf73] text-white text-[20px] font-light m-10 h-[60px] *:px-6 *:cursor-pointer"
+          >
+            <button data-category="all">ALL</button>
+            <button data-category="web design">WEB DESIGN</button>
+            <button data-category="web Development">WEB DEVELOPMENT</button>
+            <button data-category="app design">APP DESIGN</button>
+            <button data-category="app Development">APP DEVELOPMENT</button>
+          </div>
+          <div class="grid grid-cols-3 *:p-10 *:brightness-50">
+            <img
+              class="item"
+              data-category="web design"
+              src="./src/img/portfolio-1.jpg"
+              alt=""
+            />
+            <img
+              class="item"
+              data-category="web Development"
+              src="./src/img/portfolio-2.jpg"
+              alt=""
+            />
+            <img
+              class="item"
+              data-category="app design"
+              src="./src/img/portfolio-3.jpg"
+              alt=""
+            />
+            <img
+              class="item"
+              data-category="app Development"
+              src="./src/img/portfolio-4.jpg"
+              alt=""
+            />
+            <img
+              class="item"
+              data-category="web design"
+              src="./src/img/portfolio-5.jpg"
+              alt=""
+            />
+            <img
+              class="item"
+              data-category="web Development"
+              src="./src/img/portfolio-6.jpg"
+              alt=""
+            />
+          </div>
 
-      
-      <div class="relative text-white">
-        
-        <div class="w-full bg-gray-300 rounded-1x2 h-12">
-          <div id="css-bar" class="bg-[#007bff] h-12 rounded-1xl w-0 transition-all duration-1000 ease-in-out"></div>
+          <div class="flex flex-col justify-center items-center p-8 mt-10">
+            <h2 class="text-5xl text-gray-800 font-bold mb-10 text-center">
+              CONTACT US
+            </h2>
+            <span class="text-[50px] text-gray-800 font-bold text-center"
+              >-------</span
+            >
+            <p class="text-center text-gray-500 text-[25px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              ullamcorper pharetra<br />
+              ligula nec hendrerit. Ut eu libero nec magna placerat fringilla.
+            </p>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-row gap-4">
+              <div
+                class="p-15 bg-white py-6 flex flex-col gap-4 justify-center items-center"
+              >
+                <svg
+                  fill="#1dbf73"
+                  width="100px"
+                  height="100px"
+                  viewBox="0 0 3 3"
+                  version="1.2"
+                  baseProfile="tiny"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.207 0.663c-0.391 -0.384 -1.024 -0.384 -1.414 0a0.973 0.973 0 0 0 0 1.391L1.5 2.75l0.707 -0.696a0.973 0.973 0 0 0 0 -1.391M1.5 1.687c-0.084 0 -0.162 -0.033 -0.221 -0.091a0.313 0.313 0 0 1 0 -0.442c0.059 -0.059 0.138 -0.091 0.221 -0.091s0.162 0.033 0.221 0.091a0.313 0.313 0 0 1 0 0.442c-0.059 0.059 -0.138 0.091 -0.221 0.091"
+                  />
+                </svg>
+                <span class="font-bold text-2xl">ADDRESS</span>
+                <span class="text-gray-600 text-[22px]"
+                  >Your Location, City, Country</span
+                >
+              </div>
+
+              <div
+                class="p-15 bg-white py-6 flex flex-col gap-4 justify-center items-center"
+              >
+                <svg
+                  fill="#000000"
+                  width="100px"
+                  height="100px"
+                  viewBox="0 0 3 3"
+                  id="phone"
+                  data-name="Flat Color"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-color"
+                >
+                  <path
+                    id="primary"
+                    d="M2.524 1.625a1.25 1.25 0 0 1 -0.429 -0.114 0.25 0.25 0 0 0 -0.32 0.104l-0.064 0.106a1.587 1.587 0 0 1 -0.43 -0.431l0.107 -0.061a0.25 0.25 0 0 0 0.104 -0.32A1.25 1.25 0 0 1 1.375 0.476 0.25 0.25 0 0 0 1.125 0.25H0.641a0.375 0.375 0 0 0 -0.284 0.125 0.391 0.391 0 0 0 -0.089 0.304 2.375 2.375 0 0 0 2.054 2.053 0.375 0.375 0 0 0 0.052 0 0.375 0.375 0 0 0 0.25 -0.091 0.375 0.375 0 0 0 0.125 -0.282V1.875a0.25 0.25 0 0 0 -0.226 -0.25"
+                    style="fill: #1bdf73"
+                  />
+                </svg>
+                <span class="font-bold text-2xl">PHONE NUMBER</span>
+                <span class="text-gray-600 text-[22px]">+123-456-789</span>
+              </div>
+
+              <div
+                class="p-15 bg-white py-6 flex flex-col gap-4 justify-center items-center"
+              >
+                <svg
+                  fill="#1bdf73"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100px"
+                  height="100px"
+                  viewBox="0 0 6.5 6.5"
+                  enable-background="new 0 0 52 52"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M3.112 3.763c0.075 0.075 0.188 0.075 0.263 0l2.825 -2.625c0.05 -0.1 0.037 -0.263 -0.163 -0.263l-5.588 0.013c-0.15 0 -0.275 0.138 -0.163 0.263z"
+                    />
+                    <path
+                      d="M6.25 2.163c0 -0.125 -0.15 -0.2 -0.25 -0.113L3.788 4.088c-0.15 0.138 -0.338 0.212 -0.537 0.212s-0.388 -0.075 -0.537 -0.2L0.512 2.05c-0.1 -0.087 -0.25 -0.025 -0.25 0.113C0.25 2.125 0.25 5 0.25 5c0 0.275 0.225 0.5 0.5 0.5h5c0.275 0 0.5 -0.225 0.5 -0.5z"
+                    />
+                  </g>
+                </svg>
+                <span class="font-bold text-2xl">EMAIL</span>
+                <span class="text-gray-600 text-[22px]"
+                  >sudeepacharjeegp@gmail.com</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-row gap-3">
+              <div class="w-full h-[500px]">
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12604.123456789!2d51.3890!3d35.6892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1234567890"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="flex flex-col gap-3 bg-white p-10 w-full">
+                <div class="flex flex-row gap-2">
+                  <input
+                    class="w-full h-12 p-8 border-1 border-gray-300 text-gray-600 text-2xl bg-white"
+                    type="text"
+                    placeholder="Your Name"
+                  />
+                  <input
+                    class="w-full h-12 p-8 border-1 border-gray-300 text-gray-600 text-2xl bg-white"
+                    type="text"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <input
+                  class="w-full h-12 p-8 border-1 border-gray-300 text-gray-600 text-2xl bg-white"
+                  type="text"
+                  placeholder="Subject"
+                />
+                <input
+                  class="w-full h-40 p-8 border-1 border-gray-300 text-gray-600 text-2xl bg-white"
+                  type="text"
+                  placeholder="Message"
+                />
+                <button
+                  class="w-[250px] h-16 bg-[#1bdf73] text-2xl text-white cursor-pointer hover:bg-gray-700 duration-500 transition-all"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex justify-between mb-1">
-          <span class="text-lg font-medium bottom-2 left-5 absolute">CSS</span>
-          <span class="text-lg font-medium absolute bottom-2 left-360 " id="css-percent">0%</span>
-        </div>
-      </div>
-
-      
-      
-
-      
-      <div class="relative text-white">
-        
-        <div class="w-full bg-gray-300 rounded-1xl h-12">
-          <div id="php-bar" class="bg-[#ffc107] h-12 rounded-1xl w-0 transition-all duration-1000 ease-in-out"></div>
-        </div>
-        <div class="flex justify-between mb-1 absolute">
-          <span class="text-lg font-medium bottom-2 left-5 absolute">jQuery</span>
-          <span class="text-lg font-medium absolute bottom-2 left-360 " id="php-percent">0%</span>
-        </div>
-      </div>
-
-      <div class="relative text-white">
-        
-        <div class="w-[1500px] bg-gray-300 rounded-1x2 h-12 relative">
-          <div id="js-bar" class="bg-[#dc3545] h-12 rounded-  transition-all duration-1000 ease-in-out"></div>
-        </div>
-        <div class="absolute">
-          <span class="text-lg font-medium bottom-2 left-5 absolute">PHP</span>
-          <span class="text-lg font-medium absolute bottom-2 left-360 " id="js-percent">0%</span>
-        </div>
-      </div>
-
-
-
-
-    </div>
-  </div>
-
-  <div class=" flex flex-row flex-wrap justify-around p-10" id="stats">
-    <div class="flex flex-col justify-center items-center gap-1">
-      <span class="text-[#1bdf73] text-[80px] font-bold" id="number1">0</span>
-      <span class="text-gray-600 text-[22px]">Our Staffs</span>
-    </div>
-    <div class="flex flex-col justify-center items-center gap-1">
-      <span class="text-[#1bdf73] text-[80px] font-bold" id="number2">0</span>
-      <span class="text-gray-600 text-[22px]">Our Clients</span>
-    </div>
-    <div class="flex flex-col justify-center items-center gap-1">
-      <span class="text-[#1bdf73] text-[80px] font-bold" id="number3">0</span>
-      <span class="text-gray-600 text-[22px]">Completed Projects</span>
-    </div>
-    <div class="flex flex-col justify-center items-center gap-1">
-      <span class="text-[#1bdf73] text-[80px] font-bold" id="number4">0</span>
-      <span class="text-gray-600 text-[22px]">Running Projects</span>
-    </div>
-  </div>
-</section>
-<section class="h-full p-15 bg-[#f2f2f2]">
-  <div class="flex flex-col justify-center items-center  p" >
-  <h2 class="text-5xl text-gray-800 font-bold mb-10 text-center">Our Portfolio</h2>
-    <span class="text-[50px] text-gray-800 font-bold text-center">-------</span>
-    <p class="text-center text-gray-500 text-[25px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper pharetra<br> ligula nec hendrerit. Ut eu libero nec magna placerat fringilla.</p>
-<div id="filterbtn" class="flex justify-around gap-5 bg-gray-800 *:focus:bg-[#1bdf73] text-white text-[20px] font-light m-10 h-[60px] *:px-6 *:cursor-pointer">
-  <button data-category="all">ALL</button>
-  <button data-category="web design">WEB DESIGN</button>
-  <BUtton data-category="web Development">WEB DEVELOPMENT</BUtton>
-  <BUtton data-category="app design">APP DESIGN</BUtton>
-  <BUTton data-category="app Development">APP DEVELOPMENT</BUTton>
-</div>
-<div class="grid grid-cols-3 grrid-rows-2 gap-3 *:p-10 *:brightness-50">
-  <img class="item" data-category="web design" src="./src/img/portfolio-1.jpg" alt="">
-  <img class="item" data-category="web Development" src="./src/img/portfolio-2.jpg" alt="">
-  <img class="item" data-category="app design" src="./src/img/portfolio-3.jpg" alt="">
-  <img class="item" data-category="app Development" src="./src/img/portfolio-4.jpg" alt="">
-  <img class="item" data-category="web design" src="./src/img/portfolio-5.jpg" alt="">
-  <img class="item" data-category="web Development" src="./src/img/portfolio-6.jpg" alt="">
-</div>
-
-  </div>
-</section>
-
-
-
-
+      </section>
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
