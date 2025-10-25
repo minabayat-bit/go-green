@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <header
+      class="bg-black/80 flex justify-between p-8 px-20 pt-8 sticky z-50 top-0"
+    >
+      <h2
+        class="text-[#1bdf73] text-5xl font-semibold tracking-widest hover:text-white"
+      >
+        GO GREEN
+      </h2>
+      <div class="flex flex-row gap-8 *:cursor-pointer">
+        <span class="text-white hover:text-[#1bdf73] text-[20px]"> HOME</span>
+        <a href="about.html" class="text-white hover:text-[#1bdf73] text-[20px]"
+          >ABOUT</a
+        >
+        <a href="services.html" class="text-white hover:text-[#1bdf73] text-[20px]"
+          >SERVICES</a
+        >
+        <a href="portofilo.html" class="text-white hover:text-[#1bdf73] text-[20px]"
+          >Portfolio</a
+        >
+        <a href="price.html" class="text-white hover:text-[#1bdf73] text-[20px]">PRICE</a>
+        <div class="">
+          <span
+            id="Dropdown-toggle"
+            class="text-white relative hover:text-[#1bdf73] flex flex-row items-center justify-center text-[20px]"
+          >
+            Dropdown
+            <div>
+              <svg
+                fill="#000000"
+                width="16px"
+                height="16px"
+                viewBox="0 0 24 24"
+                id="triple-down-sign"
+                data-name="Line Color"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon line-color"
+              >
+                <polyline
+                  id="primary-2"
+                  data-name="primary"
+                  points="5 3 12 10 19 3"
+                  style="
+                    fill: none;
+                    stroke: rgb(255, 255, 255);
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2;
+                  "
+                ></polyline>
+              </svg>
+            </div>
+          </span>
+          <ul
+            id="Dropdown-menu"
+            class="absolute top-15 space-y-6 flex-col justify-center items-center bg-white p-6 *:text-[20px] hidden"
+          >
+            <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
+            <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
+            <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
+            <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
+            <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
+          </ul>
+        </div>
+        <a href="contact.html" class="text-white hover:text-[#1bdf73] text-[20px]">CONTACT</a>
+      </div>
+    </header>
+    <main>
+         <section class="h-full p-15 bg-[#f2f2f2]">
+        <div class="flex flex-col justify-center items-center p">
+          <h2 class="text-5xl text-gray-800 font-bold mb-10 text-center">
+            Our Portfolio
+          </h2>
+          <span class="text-[50px] text-gray-800 font-bold text-center"
+            >-------</span
+          >
+          <p class="text-center text-gray-500 text-[25px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            ullamcorper pharetra<br />
+            ligula nec hendrerit. Ut eu libero nec magna placerat fringilla.
+          </p>
+          <div
+            id="filterbtn"
+            class="flex justify-around gap-5 bg-gray-800 *:focus:bg-[#1bdf73] text-white text-[20px] font-light m-10 h-[60px] *:px-6 *:cursor-pointer"
+          >
+            <button data-category="all">ALL</button>
+            <button data-category="web design">WEB DESIGN</button>
+            <button data-category="web Development">WEB DEVELOPMENT</button>
+            <button data-category="app design">APP DESIGN</button>
+            <button data-category="app Development">APP DEVELOPMENT</button>
+          </div>
+          <div class="grid grid-cols-3 *:p-10 *:brightness-50">
+            <img
+              class="item"
+              data-category="web design"
+              src="./src/img/portfolio-1.jpg"
+              alt=""
+            />
+            <img
+              class="item"
+              data-category="web Development"
+              src="./src/img/portfolio-2.jpg"
+              alt=""
+            />
+            <img
+              class="item"
+              data-category="app design"
+              src="./src/img/portfolio-3.jpg"
+              alt=""
+            />
+            <img
+              class="item"
+              data-category="app Development"
+              src="./src/img/portfolio-4.jpg"
+              alt=""
+            />
+            <img
+              class="item"
+              data-category="web design"
+              src="./src/img/portfolio-5.jpg"
+              alt=""
+            />
+            <img
+              class="item"
+              data-category="web Development"
+              src="./src/img/portfolio-6.jpg"
+              alt=""
+            />
+          </div>
+
+         
+         
+        </div>
+      </section>
+       <script type="module" src="/src/portofilo.ts"></script>
+    </main>
+</body>
+</html>

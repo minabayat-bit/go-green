@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+   <header
+      class="bg-black/80 flex justify-between p-8 px-20 pt-8 sticky z-50 top-0"
+    >
+      <h2
+        class="text-[#1bdf73] text-5xl font-semibold tracking-widest hover:text-white"
+      >
+        GO GREEN
+      </h2>
+      <div class="flex flex-row gap-8 *:cursor-pointer">
+        <span class="text-white hover:text-[#1bdf73] text-[20px]"> HOME</span>
+        <a href="about.html" class="text-white hover:text-[#1bdf73] text-[20px]"
+          >ABOUT</a
+        >
+        <a href="services.html" class="text-white hover:text-[#1bdf73] text-[20px]"
+          >SERVICES</a
+        >
+        <a href="portofilo.html" class="text-white hover:text-[#1bdf73] text-[20px]"
+          >Portfolio</a
+        >
+        <a href="price.html" class="text-white hover:text-[#1bdf73] text-[20px]">PRICE</a>
+        <div class="">
+          <span
+            id="Dropdown-toggle"
+            class="text-white relative hover:text-[#1bdf73] flex flex-row items-center justify-center text-[20px]"
+          >
+            Dropdown
+            <div>
+              <svg
+                fill="#000000"
+                width="16px"
+                height="16px"
+                viewBox="0 0 24 24"
+                id="triple-down-sign"
+                data-name="Line Color"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon line-color"
+              >
+                <polyline
+                  id="primary-2"
+                  data-name="primary"
+                  points="5 3 12 10 19 3"
+                  style="
+                    fill: none;
+                    stroke: rgb(255, 255, 255);
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2;
+                  "
+                ></polyline>
+              </svg>
+            </div>
+          </span>
+          <ul
+            id="Dropdown-menu"
+            class="absolute top-15 space-y-6 flex-col justify-center items-center bg-white p-6 *:text-[20px] hidden"
+          >
+            <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
+            <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
+            <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
+            <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
+            <li class="text-black hover:text-[#1bdf73]">Dropdown Menu</li>
+          </ul>
+        </div>
+        <a href="contact.html" class="text-white hover:text-[#1bdf73] text-[20px]">CONTACT</a>
+      </div>
+    </header>
+
+  <main>
+     <section
+        id="about"
+        class="h-[100%] flex flex-col justify-center items-center mt- bg-[#f2f2f2]"
+      >
+        <h2 class="text-[45px] font-semibold text-black pt-15">ABOUT US</h2>
+        <span class="text-[45px] font-semibold text-black">--------</span>
+        <p class="text-[25px] text-center text-gray-500">
+          Maecenas vel turpis quis lorem aliquam tempus quis non mi.
+          Pellentesque habitant<br />
+          morbi tristique senectus et netus et malesuada fames ac turpis
+          egestas.
+        </p>
+        <div class="relative mt-20">
+          <img
+            class="absolute right-[60%] top-15"
+            src="./src/img/about.jpg"
+            alt=""
+          />
+          <div class="flex flex-col gap-3 relative left-[60%] w-[500px]">
+            <h2 class="text-[#1bdf73] text-[40px] font-bold">
+              Welcome to Our Site
+            </h2>
+            <p class="text-[25px] text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+              ex animi labore unde. Error maxime nesciunt, dolore obcaecati vero
+              quis. Esse, incidunt? Deserunt sit alias quisquam commodi, quo
+              cumque nostrum!
+            </p>
+            <button class="w-[170px] h-12 bg-[#1bdf73] text-white text-[25px]">
+              Read More
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-row justify-around gap-20 p-20">
+          <div class="flex flex-col h-[750px] w-[440px] gap-8 mt-20 bg-white">
+            <img src="./src/img/about-mission.jpg" alt="" />
+            <h2 class="text-3xl font-bold text-center">Our Mission</h2>
+            <p class="text-[20px] text-gray-500 text-center p-5">
+              Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula
+              nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus
+              turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis
+            </p>
+            <button
+              class="w-[170px] h-12 bg-[#1bdf73] text-white text-[25px] ml-30"
+            >
+              Read More
+            </button>
+          </div>
+          <div class="flex flex-col h-[750px] w-[440px] gap-8 mt-20 bg-white">
+            <img src="./src/img/about-mission.jpg" alt="" />
+            <h2 class="text-3xl font-bold text-center">Our Mission</h2>
+            <p class="text-[20px] text-gray-500 text-center p-5">
+              Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula
+              nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus
+              turpis. Aenean tincidunt auctor purus, ac sodales sapien sagittis
+            </p>
+            <button
+              class="w-[170px] h-12 bg-[#1bdf73] text-white text-[25px] ml-30"
+            >
+              Read More
+            </button>
+          </div>
+          <div class="flex flex-col h-[750px] w-[440px] gap-8 mt-20 bg-white">
+            <img src="./src/img/about-mission.jpg" alt="" />
+            <h2 class="text-3xl font-bold text-center">Our Mission</h2>
+            <p class="text-[20px] text-gray-500 text-center p-5">
+              Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula
+              nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus
+              turpis. Aenean tincidunt auctor purus, ac sodales. sapien sagittis
+            </p>
+            <button
+              class="w-[170px] h-12 bg-[#1bdf73] text-white text-[25px] ml-30"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </section>
+      </main>
+      <script type="module" src="/src/about.ts"></script>
+</body>
+</html>
